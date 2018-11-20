@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import module from "core/application/module/index";
-import withAuthentication from "core/application/hoc/withAuthentication";
+import module from "core/module/index";
+import withAuthentication from "core/hoc/withAuthentication";
 
 class HomePage extends Component{
 	static propTypes = {

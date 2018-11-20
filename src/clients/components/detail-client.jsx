@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import EditButton from "core/application/components/forms/buttons/edit-button";
-import BackButton from "core/application/components/forms/buttons/back-button";
-import DeleteButton from "core/application/components/forms/buttons/delete-button";
+import EditButton from "core/components/forms/buttons/edit-button";
+import BackButton from "core/components/forms/buttons/back-button";
+import DeleteButton from "core/components/forms/buttons/delete-button";
 import ClientTarget from "clients/components/client-target";
 
 const DetailClient = ({client, onRemove}) => (

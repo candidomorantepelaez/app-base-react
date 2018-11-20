@@ -1,6 +1,6 @@
 import { map, mergeAll, objOf, chain, insert, filter, isNil } from "ramda";
 import { combineReducers } from 'redux';
-import { languages, modules } from "./../../../main";
+import { languages, modules } from "main";
 import moduleApp from "./module-app";
 
 const modulesApp = insert(0, moduleApp, modules);

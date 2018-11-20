@@ -1,6 +1,6 @@
 import React from "react";
-import SubmitButton from "core/application/components/forms/buttons/submit-button";
-import BackButton from "core/application/components/forms/buttons/back-button";
+import SubmitButton from "core/components/forms/buttons/submit-button";
+import BackButton from "core/components/forms/buttons/back-button";
 
 const createClientForm = {
   actions: [<SubmitButton />, <BackButton />],

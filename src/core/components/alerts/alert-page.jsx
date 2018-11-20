@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Alert from "core/application/components/alerts/alert";
 import { connect } from "react-redux";
-import { getAlerts } from "core/application/reducers/alert-reducer";
+import { getAlerts } from "core/reducers/alert-reducer";
+import Alert from "core/components/alerts/alert";
 
-const AlertPage = (props) => (
+const AlertPage = props => (
   (props.alerts.length > 0) ?
     <div>
       {props.alerts.map((alert, key) =>

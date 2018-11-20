@@ -1,6 +1,6 @@
 import React from 'react';
 import { injectIntl, intlShape, FormattedMessage } from "react-intl";
-import { FaInfo } from "react-icons/lib/fa";
+import { FaInfo } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { map, addIndex, values } from "ramda";
 

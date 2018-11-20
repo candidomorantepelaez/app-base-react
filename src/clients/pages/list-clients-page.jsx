@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import ClientList from "clients/components/client-list";
 import { connect } from "react-redux";
-import LoadingIcon from "core/application/components/iconos/loading-icon";
+import LoadingIcon from "core/components/iconos/loading-icon";
 
 class ListClientsPage extends Component {
   static propTypes = {

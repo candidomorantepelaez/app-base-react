@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
-import LoadingIcon from "core/application/components/iconos/loading-icon";
+import LoadingIcon from "core/components/iconos/loading-icon";
 import DetailClient from "clients/components/detail-client";
 
 class DetailClientPage extends Component {

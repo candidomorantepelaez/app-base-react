@@ -1,8 +1,9 @@
 import React from "react";
-import LinkButtonBlock from "core/application/components/forms/buttons/link-button";
+import { FormattedMessage } from "react-intl";
 import PropTypes from "prop-types";
+import LinkButtonBlock from "core/components/forms/buttons/link-button";
 import ClientFile from "clients/components/client-file";
-import { FormattedMessage } from 'react-intl';
+;
 
 const ClientList = ({list, searching, onRemove}) => (
   (searching === true) ?

@@ -1,8 +1,9 @@
 import { successType, failureType } from "fredux";
-import { ON_LOGIN, ON_LOGOUT, ON_SAVE_USER_FROM_COOKIE } from "core/application/actions/login-action";
-import history from "core/application/routes/history";
-import { openAlert } from "core/application/actions/alert-actions";
 import cookie from "react-cookies";
+import { ON_LOGIN, ON_LOGOUT, ON_SAVE_USER_FROM_COOKIE } from "core/actions/login-action";
+import history from "core/routes/history";
+import { openAlert } from "core/actions/alert-actions";
+
 
 
 const reactions = [

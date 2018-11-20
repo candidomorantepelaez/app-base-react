@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Form from "core/application/components/forms/form";
-import createClientForm from "clients/forms/create-client-form";
 import { map } from "ramda";
+import Form from "core/components/forms/form";
+import createClientForm from "clients/forms/create-client-form";
 
 const EditClient = ({client, onEdit}) => (
   <Form

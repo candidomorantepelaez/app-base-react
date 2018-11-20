@@ -1,5 +1,5 @@
-import { post, get } from "core/application/api/index";
-import { apiPath } from "core/application/constans";
+import { post, get } from "core/api";
+import { apiPath } from "core/constans";
 
 const credentials = (value) => new Promise((resolve, reject) => {
   post(`${apiPath}/credentials`, { body: value })

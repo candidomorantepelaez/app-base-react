@@ -2,9 +2,9 @@ import React from "react";
 import { connect } from 'react-redux';
 import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
-import Form from "core/application/components/forms/form";
-import SubmitButton from "core/application/components/forms/buttons/submit-button";
-import { credentials } from "core/application/actions/login-action";
+import Form from "core/components/forms/form";
+import SubmitButton from "core/components/forms/buttons/submit-button";
+import { credentials } from "core/actions/login-action";
 import "assets/css/login-page.css";
 
 const loginForm = {

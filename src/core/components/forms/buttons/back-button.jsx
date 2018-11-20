@@ -1,5 +1,5 @@
 import React from 'react';
-import history from "core/application/routes/history";
+import history from "core/routes/history";
 import { FormattedMessage } from 'react-intl';
 
 const BackButton = () => (

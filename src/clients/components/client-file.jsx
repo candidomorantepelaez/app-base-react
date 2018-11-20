@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import DeleteActionIcon from "core/application/components/forms/buttons/delete-action-icon";
-import DetailActionIcon from "core/application/components/forms/buttons/detail-action-icon";
-import EditActionIcon from "core/application/components/forms/buttons/edit-action-icon";
+import DeleteActionIcon from "core/components/forms/buttons/delete-action-icon";
+import DetailActionIcon from "core/components/forms/buttons/detail-action-icon";
+import EditActionIcon from "core/components/forms/buttons/edit-action-icon";
 
 const ClientFile = ({ client, action, intl}) => (
   <tr>

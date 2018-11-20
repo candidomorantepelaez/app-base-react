@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getCurrentUser } from "core/application/reducers/login-reducer";
+import { getCurrentUser } from "core/reducers/login-reducer";
 import { isNil, contains, is } from "ramda";
-import LoginPage from "core/application/pages/login/login-page";
+import LoginPage from "core/pages/login/login-page";
 import { FormattedMessage } from "react-intl";
 
 function withAuthentication(WrappedComponent, options = {}) {

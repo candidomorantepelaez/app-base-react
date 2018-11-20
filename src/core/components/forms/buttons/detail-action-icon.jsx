@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 import { injectIntl, intlShape } from "react-intl";
 import { Link } from "react-router-dom";
-import { MdAccountBox } from "react-icons/lib/md";
+import { MdAccountBox } from "react-icons/md";
 
 const DetailActionIcon = ({path, intl}) => (
   <Link

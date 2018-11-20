@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import Input from "core/application/components/forms/input";
-import Select from "core/application/components/forms/select";
+import Input from "core/components/forms/input";
+import Select from "core/components/forms/select";
 import { reduce, isNil, isEmpty, omit, merge, objOf, filter } from "ramda";
 
 class Form extends Component {

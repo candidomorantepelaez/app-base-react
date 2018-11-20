@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSpinner } from "react-icons/lib/fa";
+import { FaSpinner } from "react-icons/fa";
 
 const LoadingIcon = () => (
   <FaSpinner className="icono" />

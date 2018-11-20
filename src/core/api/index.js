@@ -1,5 +1,5 @@
-import { customGet, customPost, customPut, customDel } from "core/application/api/custom-fredux-api-utils";
-import history from "core/application/routes/history";
+import { customGet, customPost, customPut, customDel } from "core/api/custom-fredux-api-utils";
+import history from "core/routes/history";
 
 const handlerResponse = (res) => new Promise((resolve, reject) => {
   res.then(res => {

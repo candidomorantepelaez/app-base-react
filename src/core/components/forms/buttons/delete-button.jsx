@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import Confirm from "core/application/components/modals/confirm"
+import Confirm from "core/components/modals/confirm"
 import { injectIntl, intlShape, FormattedMessage } from "react-intl";
 
 class DeleteButton extends Component{

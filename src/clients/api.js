@@ -1,5 +1,5 @@
-import { get, post, put, del} from "core/application/api/index";
-import { apiPath } from "core/application/constans";
+import { get, post, put, del} from "core/api/index";
+import { apiPath } from "core/constans";
 
 const saveClient = (cliente) => new Promise((resolve, reject) => {
   post(`${apiPath}/client`, { body: cliente })

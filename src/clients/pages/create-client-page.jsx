@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { FormattedMessage } from "react-intl";
 import { connect } from "react-redux";
 import CreateClient from "clients/components/create-client";
-import { createClient } from "clients/actions";
+import { saveClient } from "clients/actions";
 
 class CreateClientPage extends Component {
   static propTypes = {
-    saveClient: PropTypes.func,
+    createClient: PropTypes.func,
   }
 
   constructor(props) {
@@ -16,7 +16,7 @@ class CreateClientPage extends Component {
   }
 
   handleSave(value) {
-    this.props.saveClient(value);
+    this.props.createClient(value);
   }
 
   render() {
@@ -32,7 +32,7 @@ class CreateClientPage extends Component {
 const storeConnect = connect(
   () => ({}),
   dispatch => ({
-    saveClient: value => dispatch(createClient(value)),
+    createClient: value => dispatch(saveClient(value)),
   }),
 );
 

@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import cookie from "react-cookies";
 import { Link } from "react-router-dom";
-import FaBars from "react-icons/lib/fa/bars";
-import history from "core/application/routes/history";
-import module from "core/application/module/index";
-import { FormattedMessage } from "react-intl";
-import { isNil, is, contains } from "ramda";
-import { logout, saveCurrentUser } from "core/application/actions/login-action";
 import { connect } from "react-redux";
-import { getCurrentUser } from "core/application/reducers/login-reducer";
+import { FormattedMessage } from "react-intl";
+import { isNil, is, contains } from "ramda"
+import { FaBars } from "react-icons/fa";
+import history from "core/routes/history";
+import module from "core/module/index";
+import { logout, saveCurrentUser } from "core/actions/login-action";
+import { getCurrentUser } from "core/reducers/login-reducer";
 
 class Menu extends Component {
   static propTypes = {

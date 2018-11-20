@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types"
 import { injectIntl, intlShape } from "react-intl";
 import { Link } from "react-router-dom";
-import { FaEdit } from "react-icons/lib/fa";
+import { FaEdit } from "react-icons/fa";
 
 const EditActionIcon = ({path, intl}) => (
   <Link

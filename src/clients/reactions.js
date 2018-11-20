@@ -1,8 +1,8 @@
 import { successType, failureType } from "fredux";
 import { REMOVE_CLIENT,
   SAVE_CLIENT, UPDATE_CLIENT } from "clients/actions";
-import { openAlert } from "core/application/actions/alert-actions";
-import history from "core/application/routes/history";
+import { openAlert } from "core/actions/alert-actions";
+import history from "core/routes/history";
 
 
 const reactions = [

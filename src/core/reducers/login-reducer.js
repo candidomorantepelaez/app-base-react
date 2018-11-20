@@ -1,6 +1,6 @@
 import { requestType, successType, failureType } from "fredux";
-import { ON_LOGIN, ON_SAVE_USER_FROM_COOKIE, ON_LOGOUT } from "core/application/actions/login-action";
 import { combineReducers } from 'redux';
+import { ON_LOGIN, ON_SAVE_USER_FROM_COOKIE, ON_LOGOUT } from "core/actions/login-action";
 
 const initialState = {
   onLogin: {

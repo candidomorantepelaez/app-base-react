@@ -28,7 +28,6 @@
     "redux-promise-middleware": "^5.1.1",
     "redux-thunk": "^2.3.0"
   },
-  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,6 +35,13 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "jest": "^23.6.0",
     "redux-devtools-extension": "^2.13.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import FaTrash from "react-icons/lib/fa/trash";
-import Confirm from "core/application/components/modals/confirm";
+import { FaTrash } from "react-icons/fa";
+import Confirm from "core/components/modals/confirm";
 import { injectIntl, intlShape } from "react-intl";
 
 class DeleteActionIcon extends Component{
