@@ -29,7 +29,7 @@ class DeleteActionIcon extends Component{
 
   render() {
     return(
-      <a
+      <span
         data-toggle="tooltip"
         data-placement="top"
         title={this.props.intl.formatMessage({ id: "core.delete" })}
@@ -45,7 +45,7 @@ class DeleteActionIcon extends Component{
           onClose={() => this.setState({ show: false })}
           onConfirm={() => this.handlerEliminar()}
         />
-      </a>
+      </span>
     );
   }
 }

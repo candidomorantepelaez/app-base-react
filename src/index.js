@@ -12,10 +12,10 @@ import { addLocale, language, messages } from "core/i18/index";
 import Menu from "core/components/menus/menu-principal";
 import AppRoutes from "core/routes/routes";
 import AlertPage from "core/components/alerts/alert-page";
-import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "./../node_modules/jquery/dist/jquery.min.js";
-import "./../node_modules/popper.js/dist/esm/popper.min.js";
-import "./../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/esm/popper.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 import "assets/css/index.css";
 
 window.Promise = Bluebird;
@@ -34,6 +34,7 @@ ReactDOM.render(
     <IntlProvider locale={language} messages={messages()[language]}>
       <Router history={history} >
         <div className="App container-fluid">
+          <AlertPage />
           <Menu />
           <AppRoutes />
         </div>
