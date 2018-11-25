@@ -7,7 +7,6 @@ import { FormattedMessage } from "react-intl";
 import { isNil, is, contains } from "ramda"
 import { FaBars } from "react-icons/fa";
 import history from "core/routes/history";
-import module from "core/module/index";
 import { logout, saveCurrentUser } from "core/actions/login-action";
 import { getCurrentUser } from "core/reducers/login-reducer";
 
@@ -15,6 +14,7 @@ class Menu extends Component {
   static propTypes = {
     currentUser: PropTypes.object,
     onLogout: PropTypes.func,
+    menu: PropTypes.array,
   }
 
   constructor(props){
@@ -87,7 +87,7 @@ class Menu extends Component {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ml-auto">
-            {module.getMenu().map((obj, key) => {
+            {this.props.menu.map((obj, key) => {
               if (this.isAuthorizated(obj)) {
                 return (
                   <li key={key} className={this.crearEstilo(obj.to)} >

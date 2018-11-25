@@ -1,3 +1,4 @@
+import React from "react";
 import messages from "clients/messages/index";
 import routes from "clients/routes";
 import reducer from "clients/reducers/index";

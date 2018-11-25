@@ -1,35 +1,23 @@
-import { map, mergeAll, objOf, chain, insert, filter, isNil } from "ramda";
-import { combineReducers } from 'redux';
-import { languages, modules } from "main";
-import moduleApp from "./module-app";
-
-const modulesApp = insert(0, moduleApp, modules);
+import { map, mergeAll, objOf, chain, filter, isNil } from "ramda";
+import { combineReducers } from "redux";
 
 // the menus
-const getMenu = () => chain(obj => obj.menu, filter(obj => isNil(obj.menu) === false, modulesApp));
+export const getMenu = modules => chain(obj => obj.menu, filter(obj => isNil(obj.menu) === false, modules));
 
 // the messages
-const mergeLang = (lang) => mergeAll(map(obj => obj.messages[lang], filter(obj => isNil(obj.messages) === false, modulesApp)));
+export const mergeLang = (lang, modules) => mergeAll(map(obj => obj.messages[lang], filter(obj => isNil(obj.messages) === false, modules)));
 
-const getMessages = () => mergeAll(map(lang => objOf(lang)(mergeLang(lang)), languages));
+// the languages
+export const getMessages = (languages, modules) => mergeAll(map(lang => objOf(lang)(mergeLang(lang, modules)), languages));
 
 // the routes
-const getRoutes = () => chain(obj => obj.routes ,filter(obj => isNil(obj.routes) === false, modulesApp));
+export const getRoutes = modules => chain(obj => obj.routes ,filter(obj => isNil(obj.routes) === false, modules));
 
-// the reducers
-const getReducer = () => combineReducers(mergeAll(map(obj => objOf(obj.key)(obj.reducer), filter(obj => isNil(obj.reducer) === false,modulesApp))));
+// the new reducers
+export const getReducers = modules => combineReducers(mergeAll(map(obj => objOf(obj.key)(obj.reducer), filter(obj => isNil(obj.reducer) === false, modules))));
 
 // the reactions
-const getReactions = () => chain(obj => obj.reactions, filter(obj => isNil(obj.reactions) === false, modulesApp));
+export const getReactions = modules => chain(obj => obj.reactions, filter(obj => isNil(obj.reactions) === false, modules));
 
 // the menus
-const getPageRewiew = () => chain(obj => obj.pageReview, filter(obj => isNil(obj.pageReview) === false, modulesApp));
-
-export default {
-  getMenu,
-  getMessages,
-  getRoutes,
-  getReducer,
-  getReactions,
-  getPageRewiew,
-}
+export const getPageRewiew = modules => chain(obj => obj.pageReview, filter(obj => isNil(obj.pageReview) === false, modules));
